@@ -27,15 +27,15 @@ structure of the sendEmail function:
   
       **Parameter**----------**Type**----------**Content**
       
-      bcc----------string----------comma-separated list of email addresses to BCC
+      bcc-------------string----------comma-separated list of email addresses to BCC
       
-      cc-----------string----------comma-separated list of email addresses to CC
+      cc---------------string----------comma-separated list of email addresses to CC
       
       htmlBody-----string----------string contained html formatted emaail body
       
-      noReply------boolean----------true if the email should be sent from a no-reply email address
+      noReply-------boolean----------true if the email should be sent from a no-reply email address
       
-      name------string----------name of the sender of the email
+      name----------string----------name of the sender of the email
       
       
       ## Examples
