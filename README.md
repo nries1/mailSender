@@ -12,13 +12,13 @@ Still here? Good! As long as you're using it for testing, this mail sender will 
 
     **Parameter**----------**Type**----------**Content**
     
-      recipient ----------  string---------- The email address of the recipient
+      recipient ----------string----------The email address of the recipient
       
-      subject ----------   string ---------- The subject line of the email
+      subject ------------string----------The subject line of the email
       
-      body ----------   string  ---------- The body of the email
+      body ---------------string----------The body of the email
       
-      options ----------   Object  ---------- An optional object for confuiuring the email
+      options ------------Object----------An optional object for confuiuring the email
       
   3. *optionally* create and pass in an options object with the following parameters
   
