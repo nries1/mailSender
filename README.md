@@ -2,7 +2,7 @@
 A script that allows developers to send emails for free.
 
  ## DISCLAIMER:
- The script that listens for GET requests at https://tinyurl.com/emailfordevs will send emails through a gmail account (named    emailfordevs@gmail.com). The account is not monitored. However, the folk at Google AND the owners of the account WILL be able to view aspects of the emails that you construct when using the API. This API is intended for testing. You SHOULD NEVER send personal, or protected information through this API.
+ The script in send_email.js sends GET requests to an unmonitored Gmail account emailfordevs@gmail.com. However, the folk at Google AND the owners of the account WILL be able to view aspects of the emails that you construct when using sendEmail. This script is intended for testing. You SHOULD NEVER send personal, or protected information using this script.
 
 Still here? Good! As long as you're using it for testing, this mail sender will hopefully save you some time and money when trying to send automated emails during development.
 
