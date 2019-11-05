@@ -8,40 +8,23 @@ Still here? Good! As long as you're using it for testing, this mail sender will 
 
 ## User Manual:
 1. Copy, or otherwise insert the script in send_email.js into your project
-2. When you are ready to send an email, call the sendEmail function with the following parameters
+2. When you are ready to send an email, call the sendEmail function with the following *required* parameters
 
-    **Parameter**-------------------------------**Type**----------------------**Content**
+    **Parameter**-----------------------------**Type**----------------------**Content**
     
-      recipient  ------------------------------   string----------------------- The email address of the recipient
+      recipient -----------------------------  string----------------------- The email address of the recipient
       
-      subject    ------------------------------   string  --------------------- The subject line of the email
+      subject -------------------------------   string  --------------------- The subject line of the email
       
-      body       ------------------------------   string  --------------------- The body of the email
+      body ----------------------------------   string  --------------------- The body of the email
       
+      options -------------------------------   Object  --------------------- An optional object for confuiuring the email
       
-
-  The mail sender script listens for GET requests at the URL https://tinyurl.com/emailfordevs
-  When it receives a GET request it looks for a single parameter, named 'package.'
-  The package parameter must pe preceded by a '?' e.g. https://tinyurl.com/emailfordevs?package=                                 {recipient:xxx,subject:xxx,body:xxx}
-  The package parameter should be an object with the following properties:
-  {
-      recipient (required): (String email address of recipient),
-      subject (required): (String subject line of email),
-      body (required): (String email body. Can be html or plain text),
-      options (optional): {
-                            bcc	(String	a comma-separated list of email addresses to BCC),
-                            cc	(String	a comma-separated list of email addresses to CC),
-                            htmlBody	(String	if set, devices capable of rendering HTML will use it instead of the required                                          body argument you can add an optional inlineImages field in HTML body if you have                                              inlined images for your email),
-                            inlineImages	(Object	a JavaScript object containing a mapping from image key (String) to image data (BlobSource); this assumes that the htmlBody parameter is used and contains references to these images in the format <img src="cid:imageKey" />
-name	String	the name of the sender of the email (default: the user's name)
-noReply	Boolean	true if the email should be sent from a generic no-reply email address to discourage recipients from responding to emails; this option is only possible for G Suite accounts, not Gmail users
-replyTo	String	an email address to use as the default reply-to address (default: the user's email address)
-                           }
-  }
+  3. *optionally* create and pass in an options object with the following parameters
   
-
-(1) Send a simple GET request to https://tinyurl.com/emailfordevs and append the content and options of the message to the         url.
-
-   
-    
-    
+      **Parameter**-----------------------------**Type**----------------------**Content**
+      bcc-----------------------------string----------------------comma-separated list of email addresses to BCC
+      cc-----------------------------string----------------------comma-separated list of email addresses to CC
+      htmlBody-----------------------string----------------------string contained html formatted emaail body
+      noReply------------------------boolean----------------------true if the email should be sent from a no-reply email address
+      name---------------------------string----------------------name of the sender of the email
