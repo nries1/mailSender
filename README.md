@@ -11,6 +11,7 @@ Still here? Good! As long as you're using it for testing, this mail sender will 
 structure of the sendEmail function:
 
 `sendEmail(recipient[required string], subject[required string], body[required string], options[optional object])
+
 // returns a promise`
 
 **Steps to Use:** 
