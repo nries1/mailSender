@@ -18,9 +18,9 @@ Still here? Good! As long as you're using it for testing, this mail sender will 
       
       body ------------------string----------The body of the email
       
-      options ---------------Object----------An optional object for confuiuring the email
+      options ---------------Object----------An optional object for configuring the email
       
-  3. *optionally* create and pass in an options object with the following parameters
+  3. *Optionally* create and pass in an options object with the following parameters
   
       **Parameter**-----------------------------**Type**----------------------**Content**
       
