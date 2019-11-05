@@ -11,14 +11,6 @@ const sendEmail = (recipient, subject, body, options) => {
     Object.prototype.toString.call(options).match(/Object/g) === null
   )
     throw new Error("the options parameter must be an object");
-  const package = encodeURIComponent(
-    JSON.stringify({
-      recipient,
-      subject,
-      body,
-      options
-    })
-  );
   //3) the body contains html but the options object does not contain an htmlBody property
   if (
     body.indexOf("<") !== -1 &&
@@ -29,6 +21,14 @@ const sendEmail = (recipient, subject, body, options) => {
       "Your email body appears to contain HTML. But you have not provided an htmlBody property to the options parameter. In order to send an email with html in the body, set the 'htmlBody' property in the options object equal to the html string that you want to send."
     );
   }
+  const package = encodeURIComponent(
+    JSON.stringify({
+      recipient,
+      subject,
+      body,
+      options
+    })
+  );
   const url = `https://tinyurl.com/emailfordevs?package=${package}`;
   return new Promise((resolve, reject) => {
     window
