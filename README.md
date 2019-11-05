@@ -7,6 +7,10 @@ A script that allows developers to send emails for free.
 Still here? Good! As long as you're using it for testing, this mail sender will hopefully save you some time and money when trying to send automated emails during development.
 
 ## User Manual:
+
+structure of the sendEmail function:
+sendEmail(recipient[required string], subject[required string], body[required string], options[optional object])
+
 1. Copy, or otherwise insert the script in send_email.js into your project
 2. When you are ready to send an email, call the sendEmail function with the following *required* parameters
 
@@ -17,8 +21,6 @@ Still here? Good! As long as you're using it for testing, this mail sender will 
       subject ---------------string----------The subject line of the email
       
       body ------------------string----------The body of the email
-      
-      options ---------------Object----------An optional object for configuring the email
       
   3. *Optionally* create and pass in an options object with the following parameters
   
