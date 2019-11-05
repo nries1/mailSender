@@ -43,7 +43,7 @@ Still here? Good! As long as you're using it for testing, this mail sender will 
       .then(res => //do something)
       .catch(err => do something)
       ```
-      Call send email with options parameter included
+      Call sendEmail with options parameter included
       
       ```
       var ccEmails = ['email1@email.com', 'email2@email.com', 'email3@email.com']
@@ -53,7 +53,7 @@ Still here? Good! As long as you're using it for testing, this mail sender will 
       var options = {htmlBody: body, cc: ccEmails.join(','), noReply: true}
       
       
-      sendEmail('email@email.com', 'this is a subject', '<div style="color: green">This is an HTML body</div>', options);
+      sendEmail('email@email.com', 'this is a subject', body, options);
       .then(res => //do something)
       .catch(err => do something)
       ```
