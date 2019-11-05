@@ -52,18 +52,18 @@ sendEmail(recipient[required string], subject[required string], body[required st
       
       sendEmail(email, subject, body);
       .then(res => //do something)
-      .catch(err => do something)
+      .catch(err => //do something)
       ```
       Call sendEmail with options parameter included
       
       ```
       var email = 'email@email.com'
       var subject = 'this is a subject'
-      var body = '<div style="color: green">This is an HTML body</div>'
+      var body = '<div style="color: green;">This is an HTML body</div>'
       var ccEmails = ['email1@email.com', 'email2@email.com', 'email3@email.com']
       var options = {htmlBody: body, cc: ccEmails.join(','), noReply: true}      
       
-      sendEmail('email@email.com', 'this is a subject', body, options);
+      sendEmail(email, subject, body, options);
       .then(res => //do something)
-      .catch(err => do something)
+      .catch(err => //do something)
       ```
