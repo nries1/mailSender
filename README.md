@@ -13,6 +13,12 @@ Still here? Good! As long as you're using it for testing, this mail sender will 
     **Parameter**-------------------------------**Type**----------------------**Content**
     
       recipient  ------------------------------   string----------------------- The email address of the recipient
+      
+      subject    ------------------------------   string  --------------------- The subject line of the email
+      
+      body       ------------------------------   string  --------------------- The body of the email
+      
+      
 
   The mail sender script listens for GET requests at the URL https://tinyurl.com/emailfordevs
   When it receives a GET request it looks for a single parameter, named 'package.'
