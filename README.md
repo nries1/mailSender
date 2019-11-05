@@ -23,8 +23,13 @@ Still here? Good! As long as you're using it for testing, this mail sender will 
   3. *optionally* create and pass in an options object with the following parameters
   
       **Parameter**-----------------------------**Type**----------------------**Content**
+      
       bcc-----------------------------string----------------------comma-separated list of email addresses to BCC
+      
       cc-----------------------------string----------------------comma-separated list of email addresses to CC
+      
       htmlBody-----------------------string----------------------string contained html formatted emaail body
+      
       noReply------------------------boolean----------------------true if the email should be sent from a no-reply email address
+      
       name---------------------------string----------------------name of the sender of the email
