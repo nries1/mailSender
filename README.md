@@ -33,3 +33,27 @@ Still here? Good! As long as you're using it for testing, this mail sender will 
       noReply------------------------boolean----------------------true if the email should be sent from a no-reply email address
       
       name---------------------------string----------------------name of the sender of the email
+      
+      
+      ##Examples
+      
+      Call sendEmail with 3 required parameters
+      ```
+      sendEmail('email@email.com', 'this is a subject', 'this is a body');
+      .then(res => //do something)
+      .catch(err => do something)
+      ```
+      Call send email with options parameter included
+      
+      ```
+      var ccEmails = ['email1@email.com', 'email2@email.com', 'email3@email.com']
+      
+      var body = '<div style="color: green">This is an HTML body</div>'
+      
+      var options = {htmlBody: body, cc: ccEmails.join(','), noReply: true}
+      
+      
+      sendEmail('email@email.com', 'this is a subject', '<div style="color: green">This is an HTML body</div>', options);
+      .then(res => //do something)
+      .catch(err => do something)
+      ```
