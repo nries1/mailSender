@@ -31,7 +31,7 @@ structure of the sendEmail function:
       
       cc---------------string----------comma-separated list of email addresses to CC
       
-      htmlBody-----string----------string contained html formatted emaail body
+      htmlBody-------string----------string contained html formatted emaail body
       
       noReply---------boolean----------true if the email should be sent from a no-reply email address
       
