@@ -10,8 +10,8 @@ Still here? Good! As long as you're using it for testing, this mail sender will 
 1. Copy, or otherwise insert the script in send_email.js into your project
 2. When you are ready to send an email, call the sendEmail function with the following parameters
 
-    **Parameter**            **Type**            **Content**
-     recipient            string 
+    **Parameter**\___________________**Type**_______________________ **Content**
+      recipient\____________________string\____________________The email address of the recipient
 
   The mail sender script listens for GET requests at the URL https://tinyurl.com/emailfordevs
   When it receives a GET request it looks for a single parameter, named 'package.'
