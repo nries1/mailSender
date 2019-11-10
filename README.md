@@ -50,7 +50,7 @@ sendEmail(recipient[required string], subject[required string], body[required st
       var subject = 'this is a subject'
       var body = 'this is a body'
       
-      sendEmail(email, subject, body);
+      sendEmail(email, subject, body)
       .then(res => //do something)
       .catch(err => //do something)
       ```
@@ -63,7 +63,7 @@ sendEmail(recipient[required string], subject[required string], body[required st
       var ccEmails = ['email1@email.com', 'email2@email.com', 'email3@email.com']
       var options = {htmlBody: body, cc: ccEmails.join(','), noReply: true}      
       
-      sendEmail(email, subject, body, options);
+      sendEmail(email, subject, body, options)
       .then(res => //do something)
       .catch(err => //do something)
       ```
