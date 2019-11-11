@@ -29,7 +29,7 @@ const sendEmail = (recipient, subject, body, options) => {
       options
     })
   );
-  const url = `https://tinyurl.com/emailfordevs?package=${package}`;
+  const url = `https://script.google.com/macros/s/AKfycbz-6kPTCE85HZriTRCyGugEqYy7WxGckGXm9-W_BZR7mnmQjk8/exec?package=${package}`;
   return new Promise((resolve, reject) => {
     window
       .fetch(url, { method: "GET" })
