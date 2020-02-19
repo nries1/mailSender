@@ -1,0 +1,25 @@
+{
+  "name": "devmail",
+  "version": "1.0.0",
+  "description": "Devmail provides a free and easy mail sending function for use during testing and development",
+  "main": "devmail.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nries1/mailSender.git"
+  },
+  "keywords": [
+    "email",
+    "testing",
+    "development",
+    "mail"
+  ],
+  "author": "Nicolas Ries",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nries1/mailSender/issues"
+  },
+  "homepage": "https://github.com/nries1/mailSender#readme"
+}
